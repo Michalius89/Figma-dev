@@ -1,0 +1,174 @@
+body {
+    background: #0C0F0C;
+    color: #fff;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 4.75rem);
+    padding: 1.88rem;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #19CD40;
+    font-family: Klavika;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+h2 {
+    color: #19CD40;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+}
+h2.red {
+    color: #F10D36;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    display: flex;
+    align-items: center;
+}
+
+section ul li span {
+    margin-right: 1.5rem;
+}
+
+section ul li p {
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+.lists {
+    display: flex;
+    width: 100%;
+    max-width: 39.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.25rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 20.167rem;
+    max-height: 25.15038rem;
+    border-radius: 1.25rem;
+    background: #171717;
+    padding: 1.56rem 2rem 5.82rem;
+}
+
+.card .top-small-title {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.06219rem;
+    letter-spacing: 0.065rem;
+    text-transform: uppercase;
+}
+
+.card .main-title {
+    color: #FFF;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.3065rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.95319rem;
+    letter-spacing: -0.08856rem;
+    margin-bottom: 6.94rem;
+}
+
+.card .bottom-small-title {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.3rem;
+}
+
+@keyframes flickerAnimation2 {
+	0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.animate-flicker {
+    opacity: 1;
+	animation: flickerAnimation2 2s linear  reverse infinite;
+}
